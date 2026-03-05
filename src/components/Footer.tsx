@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { BOOK_NOW_URL, NAV_LINKS, CONTACT, SOCIALS, SERVICE_AREAS } from "@/lib/constants";
 
@@ -17,13 +18,13 @@ export function Footer() {
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand */}
           <div>
-            <Link href="/" className="inline-flex items-center gap-2" aria-label="Autoelite home">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-brand-orange">
-                <span className="text-xs font-extrabold text-brand-black">AE</span>
-              </div>
-              <span className="text-lg font-bold text-white">
-                Auto<span className="text-brand-orange">elite</span>
-              </span>
+            <Link href="/" className="inline-block" aria-label="Autoelite home">
+              <Image
+                src="/logo-full.png"
+                alt="Autoelite Performance Centre"
+                width={200}
+                height={44}
+              />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
               Premium automotive service in Montreal. Professional diagnostics, repairs, and performance upgrades — serving the West Island and beyond.
@@ -115,7 +116,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 border-t border-surface-border pt-8 text-center text-xs text-text-muted">
-          &copy; {new Date().getFullYear()} Autoelite. All rights reserved. | Professional automotive service in Montreal, QC.
+          &copy; {new Date().getFullYear()} Autoelite Performance Centre. All rights reserved. | Professional automotive service in Montreal, QC.
         </div>
       </div>
     </footer>

@@ -15,7 +15,7 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Autoelite Performance & Repair | Trusted Automotive Service in Montreal",
+    default: "Autoelite Performance Centre | Trusted Automotive Service in Montreal",
     template: "%s | Autoelite",
   },
   description:
@@ -28,19 +28,25 @@ export const metadata: Metadata = {
     "brake service Dorval",
     "vehicle diagnostics Pointe-Claire",
   ],
+  icons: {
+    icon: "/logo-icon.png",
+    apple: "/logo-icon.png",
+  },
   openGraph: {
-    title: "Autoelite Performance & Repair | Trusted Automotive Service",
+    title: "Autoelite Performance Centre | Trusted Automotive Service",
     description:
       "Professional automotive repair, diagnostics, and performance upgrades. Book your appointment online with Autoelite.",
     type: "website",
     locale: "en_CA",
-    siteName: "Autoelite",
+    siteName: "Autoelite Performance Centre",
+    images: [{ url: "/logo-full.png", width: 1200, height: 630, alt: "Autoelite Performance Centre" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Autoelite Performance & Repair",
+    title: "Autoelite Performance Centre",
     description:
       "Professional automotive repair, diagnostics, and performance upgrades in Montreal.",
+    images: ["/logo-full.png"],
   },
   robots: {
     index: true,

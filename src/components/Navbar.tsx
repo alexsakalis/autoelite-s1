@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
@@ -25,15 +26,25 @@ export function Navbar() {
         scrolled ? "bg-brand-black/95 shadow-lg shadow-black/20 backdrop-blur-md" : "bg-transparent"
       }`}
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8">
-        {/* Logo placeholder */}
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+        {/* Logo */}
         <Link href="/" className="relative z-10 flex items-center gap-2">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-brand-orange">
-            <span className="text-sm font-extrabold text-brand-black">AE</span>
-          </div>
-          <span className="text-lg font-bold tracking-tight text-white">
-            Auto<span className="text-brand-orange">elite</span>
-          </span>
+          <Image
+            src="/logo-icon.png"
+            alt="Autoelite"
+            width={40}
+            height={40}
+            className="block md:hidden"
+            priority
+          />
+          <Image
+            src="/logo-full.png"
+            alt="Autoelite Performance Centre"
+            width={220}
+            height={48}
+            className="hidden md:block"
+            priority
+          />
         </Link>
 
         {/* Desktop nav */}
