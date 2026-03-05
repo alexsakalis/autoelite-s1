@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-brand-black text-text-primary antialiased;
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-orange to-brand-orange-light bg-clip-text text-transparent;
+  }
+}
+
+/* Bottom padding on mobile for sticky book button */
+@media (max-width: 639px) {
+  main {
+    padding-bottom: 4rem;
+  }
+}
