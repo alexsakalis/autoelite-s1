@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "services": "Services",
+    "gallery": "Galerie",
+    "about": "À propos",
+    "reviews": "Avis",
+    "contact": "Contact",
+    "bookNow": "RÉSERVER"
+  },
+  "hero": {
+    "badge": "Service automobile professionnel",
+    "title": "Un service automobile de qualité sur lequel vous pouvez compter",
+    "subtitle": "Diagnostics professionnels, réparations et améliorations de performance à Montréal — soutenus par des techniciens honnêtes et des pièces de qualité.",
+    "bookAppointment": "Prendre rendez-vous",
+    "viewServices": "Voir nos services"
+  },
+  "whyChoose": {
+    "label": "Pourquoi nous choisir",
+    "title": "Pourquoi choisir Autoelite",
+    "subtitle": "Bâti sur la confiance, l'expertise et une passion pour garder votre véhicule au meilleur de sa forme.",
+    "items": {
+      "technicians": { "title": "Techniciens expérimentés", "desc": "Des professionnels certifiés avec des années d'expérience pratique sur toutes les marques et tous les modèles." },
+      "diagnostics": { "title": "Diagnostics honnêtes", "desc": "Des évaluations claires et une tarification transparente — jamais de ventes inutiles." },
+      "parts": { "title": "Pièces de qualité", "desc": "Nous utilisons des pièces OEM et de marché secondaire reconnues pour des résultats durables." },
+      "performance": { "title": "Expertise en performance", "desc": "Des véhicules du quotidien aux builds modifiés — nous savons comment tirer le meilleur de votre voiture." }
+    }
+  },
+  "services": {
+    "label": "Ce que nous offrons",
+    "title": "Nos services",
+    "subtitle": "De l'entretien courant aux améliorations de performance — au service de Montréal et du West Island.",
+    "subtitleFull": "De l'entretien courant aux améliorations de performance — des services automobiles professionnels à Montréal et sur le West Island.",
+    "viewAll": "Voir tous les services",
+    "bannerText": "Prenez rendez-vous en ligne — au service de Montréal et du West Island",
+    "localSeo": "Autoelite est votre atelier de réparation automobile de confiance à Montréal. Nous sommes fiers de servir les automobilistes de Vaudreuil-Dorion, Pointe-Claire, Dorval, Beaconsfield, Kirkland et de tout le West Island. Des changements d'huile et du service de freins aux reconstructions complètes de moteur et aux améliorations de performance — nous faisons tout avec des pièces de qualité et une tarification honnête.",
+    "items": {
+      "oil": { "title": "Changement d'huile et entretien", "desc": "Changements d'huile réguliers, remplacement de filtres et entretien préventif pour garder votre véhicule en bon état de marche." },
+      "brake": { "title": "Service de freins", "desc": "Remplacement de plaquettes et de disques, purge de liquide de frein et diagnostic complet du système de freinage." },
+      "diagnostic": { "title": "Diagnostics véhicule", "desc": "Diagnostics informatisés et dépannage expert pour identifier les témoins moteur et les problèmes de conduite." },
+      "suspension": { "title": "Suspension et direction", "desc": "Amortisseurs, jambes de force, rotules, biellettes de direction et services d'alignement pour une conduite douce et sécuritaire." },
+      "engine": { "title": "Réparations moteur", "desc": "Des mises au point mineures aux travaux majeurs sur le moteur — réalisés avec précision et des pièces de qualité." },
+      "performance": { "title": "Améliorations de performance", "desc": "Programmation, améliorations d'admission et d'échappement, et installation de pièces de performance pour une puissance sérieuse." },
+      "tire": { "title": "Montage et équilibrage de pneus", "desc": "Installation de pneus neufs, équilibrage, permutation et réparation de pneus. Nous trouvons les bons pneus pour votre véhicule." },
+      "inspection": { "title": "Inspections de véhicules", "desc": "Inspections pré-achat et de sécurité pour que vous sachiez exactement dans quel état se trouve votre véhicule." }
+    }
+  },
+  "gallery": {
+    "label": "Nos réalisations",
+    "title": "Galerie",
+    "subtitle": "Un aperçu de nos réparations, builds et travaux de performance.",
+    "viewFull": "Voir la galerie complète",
+    "filters": { "all": "Tous", "repairs": "Réparations", "shop": "Atelier", "performance": "Performance", "beforeAfter": "Avant / Après" }
+  },
+  "about": {
+    "label": "À propos",
+    "heroTitle": "Un atelier père et fils bâti sur la confiance",
+    "heroSubtitle": "Entreprise familiale fière de servir Montréal avec plus de 35 ans d'expérience.",
+    "intro1": "Chez Autoelite, les voitures ont toujours fait partie de notre famille. En tant qu'entreprise père et fils, nous avons bâti cet atelier sur des valeurs communes : le travail acharné, l'honnêteté, le souci du détail et la fierté du travail bien fait.",
+    "intro2": "Nous savons qu'amener votre véhicule dans un atelier de réparation, c'est bien plus qu'un simple service — c'est une question de confiance. C'est pourquoi nous travaillons fort pour offrir à chaque client le type d'expérience que nous voudrions pour notre propre famille : une communication claire, des conseils honnêtes et des réparations de qualité qui durent.",
+    "intro3": "Des diagnostics et de l'entretien aux réparations et aux travaux de performance, nous sommes fiers de servir Montréal avec le soin personnel et l'engagement que seule une entreprise familiale peut offrir.",
+    "badgeTitle": "Entreprise familiale. Bâtie sur l'expérience.",
+    "badgeDesc": "Depuis plus de 35 ans, la passion de notre famille pour les voitures et notre engagement envers la qualité façonnent tout ce que nous faisons.",
+    "storyTitle": "Notre histoire",
+    "story1": "Autoelite a été bâti sur une passion partagée entre un père et ses fils — une passion pour les voitures, le travail acharné et la construction de quelque chose de significatif ensemble.",
+    "story2": "Ce qui a commencé par des années d'expérience pratique en automobile est devenu une entreprise familiale fondée sur la confiance, la fierté et un engagement envers la qualité. Pour nous, cet atelier n'est pas seulement une question de réparation de véhicules — c'est perpétuer un standard de travail et de service à la clientèle qui reflète notre nom de famille.",
+    "story3": "Travailler ensemble en famille nous permet d'offrir un type de service différent à l'atelier. Nous comprenons la valeur des relations, de la loyauté et du respect envers les gens. Cet état d'esprit se retrouve dans chaque réparation, chaque diagnostic et chaque conversation que nous avons avec nos clients.",
+    "story4": "De l'entretien courant aux réparations complexes et aux travaux de performance, nous prenons le temps d'inspecter, de diagnostiquer et de réparer chaque véhicule avec soin et précision.",
+    "trustTitle": "Un atelier bâti sur la confiance",
+    "trust1": "En tant qu'entreprise familiale, la confiance est au cœur de tout ce que nous faisons.",
+    "trust2": "Nous savons à quel point il est important de trouver un atelier de réparation sur lequel vous pouvez compter, et nous ne prenons jamais cela pour acquis. Notre équipe croit en la transparence, en l'explication claire des réparations et en aidant les clients à comprendre exactement ce dont leur véhicule a besoin — et tout aussi important, ce dont il n'a pas besoin.",
+    "trustBold": "Aucun travail inutile. Aucune pression. Aucun raccourci. Juste un service honnête, un travail de qualité et le type de soin que vous attendez d'une entreprise qui met son nom de famille derrière chaque travail.",
+    "facilityTitle": "Nos installations",
+    "facility1": "Notre atelier est équipé pour gérer une vaste gamme de services automobiles, incluant les diagnostics, l'entretien, les réparations et les améliorations de performance.",
+    "facility2": "Nous utilisons des outils de diagnostic modernes et de l'équipement de grade professionnel pour nous assurer que chaque réparation est complétée avec précision et efficacité. Mais au-delà des outils, ce qui distingue vraiment notre atelier, c'est la fierté que nous mettons dans notre travail et les valeurs familiales qui le soutiennent.",
+    "facility3": "Qu'il s'agisse d'un véhicule du quotidien, d'un véhicule familial ou d'une voiture de performance, chaque travail est abordé avec le même niveau d'attention, de soin et de professionnalisme.",
+    "approachTitle": "Notre approche",
+    "approach1": "Chez Autoelite, nous croyons qu'il faut aller au-delà de la simple réparation du problème évident.",
+    "approach2": "Lorsqu'un véhicule arrive pour un problème précis, nous prenons le temps de l'inspecter en profondeur et de regarder l'ensemble du portrait. Notre objectif est de nous assurer que le véhicule repart non seulement réparé, mais sécuritaire, fiable et bien entretenu.",
+    "approach3": "Cet état d'esprit vient d'années d'expérience et des valeurs que nous avons bâties en tant qu'entreprise père et fils : faire le travail correctement, communiquer honnêtement et traiter chaque client avec respect.",
+    "approach4": "C'est ainsi que nous bâtissons des relations à long terme — et c'est le standard que nous apportons à chaque véhicule qui passe par notre atelier.",
+    "approachPoints": ["Diagnostics approfondis", "Recommandations honnêtes", "Pièces et travail de qualité", "Communication claire avec les clients"],
+    "ctaTitle": "Prêt à découvrir la différence Autoelite ?",
+    "ctaSubtitle": "Une entreprise père et fils avec plus de 35 ans d'expérience. L'atelier de confiance de Montréal pour la réparation et le service automobile."
+  },
+  "reviews": {
+    "label": "Témoignages",
+    "title": "Ce que nos clients disent",
+    "subtitle": "Ne nous croyez pas sur parole — écoutez les automobilistes de Montréal qui font confiance à Autoelite.",
+    "ctaTitle": "Prêt à découvrir Autoelite ?",
+    "ctaSubtitle": "Rejoignez des centaines d'automobilistes satisfaits à Montréal.",
+    "viewOnGoogle": "Voir tous les avis sur Google"
+  },
+  "contact": {
+    "label": "Nous joindre",
+    "title": "Contact / Demandes",
+    "subtitle": "Envoyez-nous un message ou prenez votre rendez-vous directement en ligne.",
+    "formTitle": "Envoyer un message",
+    "formSubtitle": "Nous vous répondrons dans les plus brefs délais.",
+    "visitUs": "Visitez-nous",
+    "preferBook": "Vous préférez réserver directement ?",
+    "preferBookDesc": "Passez le formulaire et planifiez votre rendez-vous en ligne.",
+    "form": {
+      "name": "Nom",
+      "email": "Courriel",
+      "phone": "Téléphone",
+      "vehicle": "Marque / Modèle du véhicule",
+      "message": "Message",
+      "submit": "Envoyer le message",
+      "success": "Message envoyé ! Nous vous répondrons sous peu.",
+      "namePlaceholder": "Votre nom complet",
+      "emailPlaceholder": "vous@exemple.com",
+      "phonePlaceholder": "(514) 000-0000",
+      "vehiclePlaceholder": "ex. Honda Civic 2022",
+      "messagePlaceholder": "Décrivez-nous vos besoins en service automobile..."
+    }
+  },
+  "fleet": {
+    "label": "Services de flotte",
+    "title": "Gardez votre flotte sur la route",
+    "subtitle": "Entretien fiable, planification prioritaire et programmes préventifs pour les véhicules commerciaux et de flotte à Montréal.",
+    "requestService": "Demander un service de flotte",
+    "servicesLabel": "Ce que nous offrons",
+    "servicesTitle": "Programmes de service de flotte",
+    "servicesSubtitle": "Des solutions adaptées aux entreprises qui dépendent de leurs véhicules.",
+    "whyLabel": "Pourquoi nous",
+    "whyTitle": "Pourquoi les entreprises choisissent Autoelite",
+    "whySubtitle": "Nous comprenons que les temps d'arrêt de flotte coûtent cher. C'est pourquoi nous offrons une planification dédiée, des rapports transparents et une qualité constante pour chaque véhicule.",
+    "stats": {
+      "vehicles": { "stat": "500+", "label": "Véhicules de flotte entretenus" },
+      "turnaround": { "stat": "Même jour", "label": "Délai de traitement prioritaire" },
+      "satisfaction": { "stat": "100 %", "label": "Garantie de satisfaction" }
+    },
+    "ctaTitle": "Prêt à optimiser l'entretien de votre flotte ?",
+    "ctaSubtitle": "Contactez-nous pour un plan de service de flotte personnalisé.",
+    "items": {
+      "maintenance": { "title": "Entretien de flotte", "desc": "Changements d'huile planifiés, inspections de freins, permutations de pneus et entretien préventif pour garder toute votre flotte à une fiabilité optimale." },
+      "commercial": { "title": "Entretien de véhicules commerciaux", "desc": "Camions légers, fourgonnettes et véhicules commerciaux. Nous répondons aux besoins particuliers des flottes commerciales avec la même qualité et précision que notre service aux particuliers." },
+      "priority": { "title": "Planification prioritaire", "desc": "Votre flotte ne peut pas se permettre de temps d'arrêt. Nous offrons une planification prioritaire pour les clients de flotte afin que vos véhicules entrent, soient entretenus et reprennent la route rapidement." },
+      "preventative": { "title": "Programmes d'entretien préventif", "desc": "Des calendriers d'entretien personnalisés adaptés à la taille et à l'utilisation de votre flotte. Réduisez les pannes imprévues et maîtrisez les coûts d'exploitation grâce à des intervalles de service planifiés." }
+    }
+  },
+  "cta": {
+    "defaultTitle": "Prêt à réserver votre service ?",
+    "defaultSubtitle": "Prenez rendez-vous en ligne — simple, rapide et fiable.",
+    "bookNow": "Réserver maintenant",
+    "bookAppointment": "Prendre rendez-vous"
+  },
+  "midCta": {
+    "inspection": { "heading": "Besoin de faire inspecter votre véhicule ?", "subtext": "Réservez votre service dès aujourd'hui — prise de rendez-vous en ligne rapide et facile." },
+    "topShape": { "heading": "Prêt à remettre votre voiture en pleine forme ?", "subtext": "Planifiez votre rendez-vous en ligne — on s'occupe du reste." },
+    "performance": { "heading": "Vous cherchez des améliorations de performance ?", "subtext": "Découvrez nos services de performance dédiés." }
+  },
+  "beforeAfter": {
+    "label": "Résultats",
+    "title": "Avant et après",
+    "subtitle": "Glissez le curseur pour voir la différence que fait notre travail.",
+    "items": { "suspension": "Réparation de suspension", "brakes": "Travaux de freins", "engine": "Réparation moteur", "performance": "Amélioration de performance" }
+  },
+  "social": {
+    "label": "Réseaux sociaux",
+    "title": "Suivez notre travail",
+    "subtitle": "Restez à jour avec nos dernières réparations, builds et la vie de l'atelier.",
+    "followUs": "Suivez-nous"
+  },
+  "serviceArea": {
+    "label": "Zone de service",
+    "title": "Fiers de servir Montréal et le West Island",
+    "subtitle": "Idéalement situés à Dollard-des-Ormeaux, nous servons les automobilistes de la grande région de Montréal."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Questions fréquemment posées"
+  },
+  "footer": {
+    "quickLinks": "Liens rapides",
+    "contactInfo": "Coordonnées",
+    "followUs": "Suivez-nous",
+    "areasWeServe": "Régions desservies",
+    "bookOnline": "Prenez rendez-vous en ligne",
+    "fleetServices": "Services de flotte",
+    "copyright": "Autoelite Performance Centre. Tous droits réservés.",
+    "tagline": "Service automobile professionnel à Montréal, QC."
+  },
+  "common": {
+    "bookNow": "Réserver maintenant",
+    "learnMore": "En savoir plus",
+    "viewOn": "Voir sur",
+    "before": "Avant",
+    "after": "Après"
+  }
+}

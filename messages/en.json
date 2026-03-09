@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "gallery": "Gallery",
+    "about": "About",
+    "reviews": "Reviews",
+    "contact": "Contact",
+    "bookNow": "BOOK NOW"
+  },
+  "hero": {
+    "badge": "Professional Auto Service",
+    "title": "Premium Automotive Service You Can Trust",
+    "subtitle": "Professional diagnostics, repairs, and performance upgrades in Montreal — backed by honest technicians and quality parts.",
+    "bookAppointment": "Book Appointment",
+    "viewServices": "View Services"
+  },
+  "whyChoose": {
+    "label": "Why choose us",
+    "title": "Why Choose Autoelite",
+    "subtitle": "Built on trust, expertise, and a passion for keeping your vehicle at its best.",
+    "items": {
+      "technicians": { "title": "Experienced Technicians", "desc": "Certified professionals with years of hands-on experience across all makes and models." },
+      "diagnostics": { "title": "Honest Diagnostics", "desc": "Straightforward assessments and transparent pricing — no unnecessary upsells, ever." },
+      "parts": { "title": "Quality Parts", "desc": "We use trusted OEM and aftermarket parts for results that last." },
+      "performance": { "title": "Performance Expertise", "desc": "From daily drivers to tuned builds — we know how to get the most from your car." }
+    }
+  },
+  "services": {
+    "label": "What we offer",
+    "title": "Our Services",
+    "subtitle": "From routine maintenance to performance upgrades — serving Montreal and the West Island.",
+    "subtitleFull": "From routine maintenance to performance upgrades — professional automotive services in Montreal and the West Island.",
+    "viewAll": "View All Services",
+    "bannerText": "Book your appointment online — serving Montreal & the West Island",
+    "localSeo": "Autoelite is your trusted auto repair shop in Montreal. We proudly serve drivers from Vaudreuil-Dorion, Pointe-Claire, Dorval, Beaconsfield, Kirkland, and throughout the West Island. From oil changes and brake service to full engine rebuilds and performance upgrades — we do it all with quality parts and honest pricing.",
+    "items": {
+      "oil": { "title": "Oil Change & Maintenance", "desc": "Regular oil changes, filter replacements, and preventive maintenance to keep your vehicle running smoothly." },
+      "brake": { "title": "Brake Service", "desc": "Brake pad and rotor replacement, fluid flush, and full brake system diagnostics and repair." },
+      "diagnostic": { "title": "Vehicle Diagnostics", "desc": "Computer diagnostics and expert troubleshooting to identify check engine lights and drivability issues." },
+      "suspension": { "title": "Suspension & Steering", "desc": "Shocks, struts, ball joints, tie rods, and alignment services for a smooth, safe ride." },
+      "engine": { "title": "Engine Repairs", "desc": "From minor tune-ups to major engine work — handled with precision and quality parts." },
+      "performance": { "title": "Performance Upgrades", "desc": "Tuning, intake and exhaust upgrades, and performance parts installation for serious power." },
+      "tire": { "title": "Tire Mounting & Balancing", "desc": "New tire installation, balancing, rotation, and tire repair. We source the right tires for your vehicle." },
+      "inspection": { "title": "Vehicle Inspections", "desc": "Pre-purchase and safety inspections so you know exactly what shape your vehicle is in." }
+    }
+  },
+  "gallery": {
+    "label": "Our work",
+    "title": "Gallery",
+    "subtitle": "A showcase of our repairs, builds, and performance work.",
+    "viewFull": "View Full Gallery",
+    "filters": { "all": "All", "repairs": "Repairs", "shop": "Shop", "performance": "Performance", "beforeAfter": "Before / After" }
+  },
+  "about": {
+    "label": "About Us",
+    "heroTitle": "A Father-and-Sons Shop Built on Trust",
+    "heroSubtitle": "Family-owned and proudly serving Montreal with over 35 years of experience.",
+    "intro1": "At Autoelite, cars have always been part of our family. As a father-and-sons business, we've built this shop on shared values: hard work, honesty, attention to detail, and pride in doing the job right.",
+    "intro2": "We know that bringing your vehicle to a repair shop is about more than service — it's about trust. That's why we work hard to give every customer the kind of experience we would want for our own family: clear communication, honest advice, and quality repairs that last.",
+    "intro3": "From diagnostics and maintenance to repairs and performance work, we're proud to serve Montreal with the personal care and commitment that only a family business can offer.",
+    "badgeTitle": "Family-Owned. Built on Experience.",
+    "badgeDesc": "For over 35 years, our family's passion for cars and commitment to quality work has helped shape everything we do.",
+    "storyTitle": "Our Story",
+    "story1": "Autoelite was built on a shared passion between father and sons — a passion for cars, hard work, and building something meaningful together.",
+    "story2": "What started with years of hands-on automotive experience grew into a family-run business founded on trust, pride, and a commitment to quality. For us, this shop is not just about repairing vehicles — it's about carrying on a standard of work and customer care that reflects our family name.",
+    "story3": "Working together as a family allows us to bring a different kind of service to the shop. We understand the value of relationships, loyalty, and treating people properly. That mindset carries into every repair, every diagnostic, and every conversation we have with our customers.",
+    "story4": "From routine maintenance to complex repairs and performance work, we take the time to properly inspect, diagnose, and repair every vehicle with care and precision.",
+    "trustTitle": "A Shop Built on Trust",
+    "trust1": "As a family business, trust is at the center of everything we do.",
+    "trust2": "We know how important it is to find a repair shop you can rely on, and we never take that for granted. Our team believes in being transparent, explaining repairs clearly, and helping customers understand exactly what their vehicle needs — and just as importantly, what it doesn't.",
+    "trustBold": "No unnecessary work. No pressure. No shortcuts. Just honest service, quality workmanship, and the kind of care you expect from a business that puts its family name behind every job.",
+    "facilityTitle": "Our Facility",
+    "facility1": "Our workshop is equipped to handle a wide range of automotive services, including diagnostics, maintenance, repairs, and performance upgrades.",
+    "facility2": "We use modern diagnostic tools and professional-grade equipment to ensure every repair is completed accurately and efficiently. But beyond the tools, what really sets our shop apart is the pride we take in our work and the family values behind it.",
+    "facility3": "Whether it's a daily driver, a family vehicle, or a performance car, every job is approached with the same level of attention, care, and professionalism.",
+    "approachTitle": "Our Approach",
+    "approach1": "At Autoelite, we believe in doing more than just fixing the obvious problem.",
+    "approach2": "When a vehicle comes in for a specific issue, we take the time to inspect it thoroughly and look at the bigger picture. Our goal is to make sure the vehicle leaves not only repaired, but safe, reliable, and properly looked after.",
+    "approach3": "That mindset comes from years of experience and from the values we've built as a father-and-sons business: do the work properly, communicate honestly, and treat every customer with respect.",
+    "approach4": "That's how we build long-term relationships — and that's the standard we bring to every vehicle that comes through our shop.",
+    "approachPoints": ["Thorough diagnostics", "Honest recommendations", "Quality parts and workmanship", "Clear communication with customers"],
+    "ctaTitle": "Ready to experience the Autoelite difference?",
+    "ctaSubtitle": "A father-and-sons business with 35+ years of experience. Montreal's trusted shop for automotive repair and service."
+  },
+  "reviews": {
+    "label": "Testimonials",
+    "title": "What Our Customers Say",
+    "subtitle": "Don't just take our word for it — hear from Montreal drivers who trust Autoelite.",
+    "ctaTitle": "Ready to experience Autoelite?",
+    "ctaSubtitle": "Join hundreds of satisfied Montreal drivers.",
+    "viewOnGoogle": "View All Reviews on Google"
+  },
+  "contact": {
+    "label": "Get in touch",
+    "title": "Contact / Inquiries",
+    "subtitle": "Send us a message or book your appointment directly online.",
+    "formTitle": "Send a message",
+    "formSubtitle": "We'll get back to you as soon as possible.",
+    "visitUs": "Visit Us",
+    "preferBook": "Prefer to book directly?",
+    "preferBookDesc": "Skip the form and schedule your appointment online.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "phone": "Phone",
+      "vehicle": "Vehicle Make / Model",
+      "message": "Message",
+      "submit": "Send Message",
+      "success": "Message sent! We'll get back to you shortly.",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "you@example.com",
+      "phonePlaceholder": "(514) 000-0000",
+      "vehiclePlaceholder": "e.g. 2022 Honda Civic",
+      "messagePlaceholder": "Tell us about your vehicle or service needs..."
+    }
+  },
+  "fleet": {
+    "label": "Fleet Services",
+    "title": "Keep Your Fleet on the Road",
+    "subtitle": "Reliable maintenance, priority scheduling, and preventative programs for commercial and fleet vehicles in Montreal.",
+    "requestService": "Request Fleet Service",
+    "servicesLabel": "What we offer",
+    "servicesTitle": "Fleet Service Programs",
+    "servicesSubtitle": "Tailored solutions for businesses that depend on their vehicles.",
+    "whyLabel": "Why us",
+    "whyTitle": "Why Businesses Choose Autoelite",
+    "whySubtitle": "We understand that fleet downtime costs money. That's why we offer dedicated fleet scheduling, transparent reporting, and consistent quality across every vehicle.",
+    "stats": {
+      "vehicles": { "stat": "500+", "label": "Fleet vehicles serviced" },
+      "turnaround": { "stat": "Same Day", "label": "Priority turnaround" },
+      "satisfaction": { "stat": "100%", "label": "Satisfaction guarantee" }
+    },
+    "ctaTitle": "Ready to streamline your fleet maintenance?",
+    "ctaSubtitle": "Contact us for a custom fleet service plan.",
+    "items": {
+      "maintenance": { "title": "Fleet Maintenance", "desc": "Scheduled oil changes, brake inspections, tire rotations, and preventative care to keep your entire fleet running at peak reliability." },
+      "commercial": { "title": "Commercial Vehicle Servicing", "desc": "Light-duty trucks, vans, and commercial vehicles. We handle the unique needs of commercial fleets with the same quality and precision as our consumer service." },
+      "priority": { "title": "Priority Scheduling", "desc": "Your fleet can't afford downtime. We offer priority scheduling for fleet clients so your vehicles get in, get serviced, and get back on the road fast." },
+      "preventative": { "title": "Preventative Maintenance Programs", "desc": "Custom maintenance schedules tailored to your fleet size and usage. Reduce unexpected breakdowns and control operating costs with planned service intervals." }
+    }
+  },
+  "cta": {
+    "defaultTitle": "Ready to book your service?",
+    "defaultSubtitle": "Book your appointment online — easy, fast, and reliable.",
+    "bookNow": "Book Now",
+    "bookAppointment": "Book Appointment"
+  },
+  "midCta": {
+    "inspection": { "heading": "Need your vehicle inspected?", "subtext": "Book your service today — fast and easy online scheduling." },
+    "topShape": { "heading": "Ready to get your car in top shape?", "subtext": "Schedule your appointment online — we'll take care of the rest." },
+    "performance": { "heading": "Looking for performance upgrades?", "subtext": "Check out our dedicated performance services." }
+  },
+  "beforeAfter": {
+    "label": "Results",
+    "title": "Before & After",
+    "subtitle": "Drag the slider to see the difference our work makes.",
+    "items": { "suspension": "Suspension Repair", "brakes": "Brake Job", "engine": "Engine Repair", "performance": "Performance Upgrade" }
+  },
+  "social": {
+    "label": "Social",
+    "title": "Follow Our Work",
+    "subtitle": "Stay up to date with our latest repairs, builds, and shop life.",
+    "followUs": "Follow Us"
+  },
+  "serviceArea": {
+    "label": "Service Area",
+    "title": "Proudly Serving Montreal & the West Island",
+    "subtitle": "Conveniently located in Dollard-des-Ormeaux, we serve drivers across the Greater Montreal Area."
+  },
+  "faq": {
+    "label": "FAQ",
+    "title": "Frequently Asked Questions"
+  },
+  "footer": {
+    "quickLinks": "Quick Links",
+    "contactInfo": "Contact Info",
+    "followUs": "Follow Us",
+    "areasWeServe": "Areas We Serve",
+    "bookOnline": "Book your appointment online",
+    "fleetServices": "Fleet Services",
+    "copyright": "Autoelite Performance Centre. All rights reserved.",
+    "tagline": "Professional automotive service in Montreal, QC."
+  },
+  "common": {
+    "bookNow": "Book Now",
+    "learnMore": "Learn More",
+    "viewOn": "View on",
+    "before": "Before",
+    "after": "After"
+  }
+}
