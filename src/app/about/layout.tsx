@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About Autoelite — Family-Owned, 35+ Years Experience",
+  title: "About Autoelite — Father & Sons, 35+ Years Experience",
   description:
-    "Family-owned with over 35 years of experience. Precision, performance, and trust — professional automotive service proudly based in Montreal.",
+    "A father-and-sons business with over 35 years of experience. Trust, honesty, and quality workmanship — proudly serving Montreal.",
   openGraph: {
-    title: "About Autoelite | Family-Owned Auto Service in Montreal",
-    description: "Family-owned with 35+ years of automotive expertise. Learn about our story, approach, and commitment to quality.",
+    title: "About Autoelite | Father-and-Sons Auto Shop in Montreal",
+    description: "Family-owned with 35+ years of automotive expertise. A father-and-sons shop built on trust, hard work, and quality.",
   },
   twitter: { card: "summary_large_image", title: "About | Autoelite" },
   alternates: { canonical: "https://autoelite.com/about" },

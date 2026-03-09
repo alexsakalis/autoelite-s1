@@ -4,7 +4,6 @@ export const SITE_URL = "https://autoelite.com";
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
-  { href: "/performance", label: "Performance" },
   { href: "/gallery", label: "Gallery" },
   { href: "/about", label: "About" },
   { href: "/reviews", label: "Reviews" },
