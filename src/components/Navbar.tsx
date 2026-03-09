@@ -28,21 +28,21 @@ export function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="relative z-10 flex items-center gap-2">
+        <Link href="/" className="relative z-10 flex items-center">
           <Image
             src="/logo-icon.png"
             alt="Autoelite"
             width={40}
             height={40}
-            className="block md:hidden"
+            className="block sm:hidden"
             priority
           />
           <Image
             src="/logo-full.png"
             alt="Autoelite Performance Centre"
-            width={220}
-            height={48}
-            className="hidden md:block"
+            width={240}
+            height={52}
+            className="hidden sm:block"
             priority
           />
         </Link>

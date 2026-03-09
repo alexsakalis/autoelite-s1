@@ -22,8 +22,8 @@ export function Footer() {
               <Image
                 src="/logo-full.png"
                 alt="Autoelite Performance Centre"
-                width={200}
-                height={44}
+                width={220}
+                height={48}
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
