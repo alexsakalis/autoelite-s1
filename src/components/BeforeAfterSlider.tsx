@@ -3,6 +3,7 @@
 import { useRef, useState, useCallback } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { SectionHeading } from "./SectionHeading";
 import { IMAGES } from "@/lib/images";
 
@@ -99,14 +100,16 @@ function Slider({ item }: { item: typeof COMPARISONS[number] }) {
 type Props = { showHeading?: boolean };
 
 export function BeforeAfterSlider({ showHeading = true }: Props) {
+  const t = useTranslations("beforeAfter");
+
   return (
     <section className="py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         {showHeading && (
           <SectionHeading
-            label="Results"
-            title="Before & After"
-            subtitle="Drag the slider to see the difference our work makes."
+            label={t("label")}
+            title={t("title")}
+            subtitle={t("subtitle")}
           />
         )}
         <div className={`grid gap-6 sm:grid-cols-2 ${showHeading ? "mt-14" : ""}`}>

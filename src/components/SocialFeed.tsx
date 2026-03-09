@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { SectionHeading } from "./SectionHeading";
 
 const SOCIALS = [
@@ -40,13 +41,15 @@ const SOCIALS = [
 ];
 
 export function SocialFeed() {
+  const t = useTranslations("social");
+
   return (
     <section className="border-t border-surface-border bg-surface py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-5 lg:px-8">
         <SectionHeading
-          label="Social"
-          title="Follow Our Work"
-          subtitle="Stay up to date with our latest repairs, builds, and shop life."
+          label={t("label")}
+          title={t("title")}
+          subtitle={t("subtitle")}
         />
 
         <div className="mt-14 grid gap-6 sm:grid-cols-3">
@@ -71,7 +74,7 @@ export function SocialFeed() {
                 <p className="mt-1 text-sm text-brand-orange">{social.handle}</p>
               </div>
               <span className="inline-flex items-center gap-2 text-sm font-semibold text-text-secondary transition-colors group-hover:text-white">
-                Follow Us
+                {t("followUs")}
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                 </svg>

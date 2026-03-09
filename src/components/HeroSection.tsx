@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { BOOK_NOW_URL } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
@@ -21,7 +22,7 @@ type HeroSectionProps = {
 export function HeroSection({
   title,
   subtitle,
-  primaryLabel = "Book Appointment",
+  primaryLabel,
   primaryUrl = BOOK_NOW_URL,
   secondaryLabel,
   secondaryHref,
@@ -29,6 +30,8 @@ export function HeroSection({
   imageSrc = IMAGES.hero,
   imageAlt = "Autoelite automotive service",
 }: HeroSectionProps) {
+  const t = useTranslations("hero");
+  const resolvedPrimaryLabel = primaryLabel ?? t("bookAppointment");
   const isExternal = primaryUrl.startsWith("http");
 
   return (
@@ -49,7 +52,7 @@ export function HeroSection({
             transition={{ delay: 0.2 }}
             className="mb-4 inline-block rounded-full border border-brand-orange/30 bg-brand-orange/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-brand-orange"
           >
-            Professional Auto Service
+            {t("badge")}
           </motion.span>
 
           <h1 className="text-4xl font-extrabold leading-[1.1] tracking-tight text-white sm:text-5xl lg:text-6xl">
@@ -70,7 +73,7 @@ export function HeroSection({
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-lg bg-brand-orange px-7 py-3.5 text-base font-bold text-brand-black transition-all hover:brightness-110 hover:shadow-xl hover:shadow-brand-orange/25"
               >
-                {primaryLabel}
+                {resolvedPrimaryLabel}
                 <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                 </svg>
@@ -80,7 +83,7 @@ export function HeroSection({
                 href={primaryUrl}
                 className="inline-flex items-center gap-2 rounded-lg bg-brand-orange px-7 py-3.5 text-base font-bold text-brand-black transition-all hover:brightness-110"
               >
-                {primaryLabel}
+                {resolvedPrimaryLabel}
               </Link>
             )}
             {secondaryLabel && secondaryHref && (

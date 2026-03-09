@@ -3,17 +3,10 @@
 import { useState, useCallback } from "react";
 import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { IMAGES } from "@/lib/images";
 
 type Filter = "all" | "repairs" | "shop" | "performance" | "before-after";
-
-const FILTERS: { id: Filter; label: string }[] = [
-  { id: "all", label: "All" },
-  { id: "repairs", label: "Repairs" },
-  { id: "shop", label: "Shop" },
-  { id: "performance", label: "Performance" },
-  { id: "before-after", label: "Before / After" },
-];
 
 const ITEMS = IMAGES.gallery.map((src, i) => ({
   id: i + 1,
@@ -28,8 +21,17 @@ type Props = {
 };
 
 export function GalleryGrid({ showFilters = true, limit, lightbox = true }: Props) {
+  const t = useTranslations("gallery.filters");
   const [filter, setFilter] = useState<Filter>("all");
   const [lightboxIdx, setLightboxIdx] = useState<number | null>(null);
+
+  const FILTERS: { id: Filter; label: string }[] = [
+    { id: "all", label: t("all") },
+    { id: "repairs", label: t("repairs") },
+    { id: "shop", label: t("shop") },
+    { id: "performance", label: t("performance") },
+    { id: "before-after", label: t("beforeAfter") },
+  ];
 
   const filtered = filter === "all" ? ITEMS : ITEMS.filter((i) => i.category === filter);
   const visible = limit ? filtered.slice(0, limit) : filtered;

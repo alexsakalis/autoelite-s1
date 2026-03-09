@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { BOOK_NOW_URL } from "@/lib/constants";
 
 type Props = {
@@ -12,8 +13,10 @@ type Props = {
 export function MidPageCTA({
   heading = "Need your vehicle inspected?",
   subtext = "Book your service today.",
-  buttonLabel = "Book Now",
+  buttonLabel,
 }: Props) {
+  const t = useTranslations("cta");
+  buttonLabel = buttonLabel ?? t("bookAppointment");
   return (
     <motion.section
       initial={{ opacity: 0 }}

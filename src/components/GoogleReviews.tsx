@@ -1,6 +1,7 @@
 "use client";
 
 import Script from "next/script";
+import { useTranslations } from "next-intl";
 import { ELFSIGHT_APP_ID, GOOGLE_REVIEWS_URL } from "@/lib/constants";
 
 type Props = {
@@ -8,6 +9,7 @@ type Props = {
 };
 
 export function GoogleReviews({ showViewMore = true }: Props) {
+  const t = useTranslations("reviews");
   if (!ELFSIGHT_APP_ID) {
     return (
       <div className="rounded-2xl border border-surface-border bg-surface-card p-10 text-center">
@@ -39,7 +41,7 @@ export function GoogleReviews({ showViewMore = true }: Props) {
             rel="noopener noreferrer"
             className="mt-8 inline-flex items-center gap-2 rounded-lg border border-brand-orange px-6 py-3 text-sm font-bold text-brand-orange transition-colors hover:bg-brand-orange hover:text-brand-black"
           >
-            View Our Reviews on Google
+            {t("viewOnGoogle")}
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
             </svg>
@@ -64,7 +66,7 @@ export function GoogleReviews({ showViewMore = true }: Props) {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-lg border border-brand-orange px-6 py-3 text-sm font-bold text-brand-orange transition-colors hover:bg-brand-orange hover:text-brand-black"
           >
-            View All Reviews on Google
+            {t("viewOnGoogle")}
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
             </svg>

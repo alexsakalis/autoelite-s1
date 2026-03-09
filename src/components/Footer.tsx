@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
-import Link from "next/link";
-import { BOOK_NOW_URL, NAV_LINKS, CONTACT, SOCIALS, SERVICE_AREAS } from "@/lib/constants";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { BOOK_NOW_URL, CONTACT, SOCIALS, SERVICE_AREAS } from "@/lib/constants";
 
 function SocialIcon({ name }: { name: string }) {
   return (
@@ -24,12 +27,23 @@ function SocialIcon({ name }: { name: string }) {
   );
 }
 
+const NAV_KEYS = [
+  { href: "/" as const, key: "home" },
+  { href: "/services" as const, key: "services" },
+  { href: "/gallery" as const, key: "gallery" },
+  { href: "/about" as const, key: "about" },
+  { href: "/reviews" as const, key: "reviews" },
+  { href: "/contact" as const, key: "contact" },
+];
+
 export function Footer() {
+  const t = useTranslations("footer");
+  const nav = useTranslations("nav");
+
   return (
     <footer className="border-t border-surface-border bg-surface-dark">
       <div className="mx-auto max-w-7xl px-5 py-14 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-          {/* Brand */}
           <div>
             <Link href="/" className="inline-block" aria-label="Autoelite home">
               <Image
@@ -40,7 +54,7 @@ export function Footer() {
               />
             </Link>
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
-              Premium automotive service in Montreal. Professional diagnostics, repairs, and performance upgrades — serving the West Island and beyond.
+              {t("tagline")}
             </p>
             <a
               href={BOOK_NOW_URL}
@@ -48,38 +62,36 @@ export function Footer() {
               rel="noopener noreferrer"
               className="mt-5 inline-block rounded-lg bg-brand-orange px-5 py-2.5 text-sm font-bold text-brand-black transition-all hover:brightness-110"
             >
-              Book your appointment online
+              {t("bookOnline")}
             </a>
           </div>
 
-          {/* Quick Links */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest text-text-muted">
-              Quick Links
+              {t("quickLinks")}
             </h3>
             <ul className="mt-5 space-y-3">
-              {NAV_LINKS.map((link) => (
+              {NAV_KEYS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
                     className="text-sm text-text-secondary transition-colors hover:text-white"
                   >
-                    {link.label}
+                    {nav(link.key)}
                   </Link>
                 </li>
               ))}
               <li>
                 <Link href="/fleet" className="text-sm text-text-secondary transition-colors hover:text-white">
-                  Fleet Services
+                  {t("fleetServices")}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest text-text-muted">
-              Contact Info
+              {t("contactInfo")}
             </h3>
             <ul className="mt-5 space-y-3 text-sm text-text-secondary">
               <li>{CONTACT.address}</li>
@@ -96,9 +108,8 @@ export function Footer() {
               <li className="pt-1 text-text-muted">{CONTACT.hours}</li>
             </ul>
 
-            {/* Social */}
             <h3 className="mt-6 text-xs font-bold uppercase tracking-widest text-text-muted">
-              Follow Us
+              {t("followUs")}
             </h3>
             <div className="mt-3 flex gap-3">
               {SOCIALS.map((s) => (
@@ -115,10 +126,9 @@ export function Footer() {
             </div>
           </div>
 
-          {/* Service Areas — local SEO */}
           <div>
             <h3 className="text-xs font-bold uppercase tracking-widest text-text-muted">
-              Areas We Serve
+              {t("areasWeServe")}
             </h3>
             <ul className="mt-5 space-y-2 text-sm text-text-secondary">
               {SERVICE_AREAS.map((area) => (
@@ -129,7 +139,7 @@ export function Footer() {
         </div>
 
         <div className="mt-14 border-t border-surface-border pt-8 text-center text-xs text-text-muted">
-          &copy; {new Date().getFullYear()} Autoelite Performance Centre. All rights reserved. | Professional automotive service in Montreal, QC.
+          &copy; {new Date().getFullYear()} {t("copyright")} | {t("tagline")}
         </div>
       </div>
     </footer>

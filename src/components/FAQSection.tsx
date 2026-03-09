@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { SectionHeading } from "./SectionHeading";
 
 const FAQ_ITEMS = [
@@ -77,6 +78,8 @@ function AccordionItem({ q, a, index }: { q: string; a: string; index: number })
 }
 
 export function FAQSection() {
+  const t = useTranslations("faq");
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -91,8 +94,8 @@ export function FAQSection() {
     <section className="py-20 sm:py-24">
       <div className="mx-auto max-w-3xl px-5 lg:px-8">
         <SectionHeading
-          label="FAQ"
-          title="Frequently Asked Questions"
+          label={t("label")}
+          title={t("title")}
           subtitle="Quick answers to common questions about our services."
         />
         <div className="mt-14">

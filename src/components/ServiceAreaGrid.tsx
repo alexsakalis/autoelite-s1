@@ -1,9 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { SERVICE_AREAS } from "@/lib/constants";
 
 export function ServiceAreaGrid() {
+  const t = useTranslations("serviceArea");
+
   return (
     <section className="border-t border-surface-border bg-surface py-20 sm:py-24">
       <div className="mx-auto max-w-3xl px-5 text-center lg:px-8">
@@ -13,10 +16,10 @@ export function ServiceAreaGrid() {
           viewport={{ once: true }}
         >
           <span className="mb-3 inline-block text-xs font-bold uppercase tracking-widest text-brand-orange">
-            Service Area
+            {t("label")}
           </span>
           <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
-            Proudly Serving Montreal &amp; the West Island
+            {t("title")}
           </h2>
         </motion.div>
 
@@ -51,7 +54,7 @@ export function ServiceAreaGrid() {
           transition={{ delay: 0.3 }}
           className="mt-8 text-sm leading-relaxed text-text-secondary"
         >
-          Conveniently located in Dollard-des-Ormeaux, we serve drivers across the Greater Montreal Area.
+          {t("subtitle")}
         </motion.p>
       </div>
     </section>

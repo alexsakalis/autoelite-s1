@@ -1,14 +1,25 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BOOK_NOW_URL, NAV_LINKS } from "@/lib/constants";
+import { useTranslations } from "next-intl";
+import { Link, usePathname } from "@/i18n/navigation";
+import { BOOK_NOW_URL } from "@/lib/constants";
+import { LanguageSwitcher } from "./LanguageSwitcher";
+
+const NAV_KEYS = [
+  { href: "/" as const, key: "home" },
+  { href: "/services" as const, key: "services" },
+  { href: "/gallery" as const, key: "gallery" },
+  { href: "/about" as const, key: "about" },
+  { href: "/reviews" as const, key: "reviews" },
+  { href: "/contact" as const, key: "contact" },
+];
 
 export function Navbar() {
   const pathname = usePathname();
+  const t = useTranslations("nav");
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -27,7 +38,6 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
-        {/* Logo */}
         <Link href="/" className="relative z-10 flex items-center">
           <Image
             src="/logo-icon.png"
@@ -47,9 +57,8 @@ export function Navbar() {
           />
         </Link>
 
-        {/* Desktop nav */}
         <ul className="hidden items-center gap-1 md:flex">
-          {NAV_LINKS.map((link) => {
+          {NAV_KEYS.map((link) => {
             const isActive = pathname === link.href;
             return (
               <li key={link.href}>
@@ -61,22 +70,22 @@ export function Navbar() {
                       : "text-text-secondary hover:bg-surface-dark hover:text-white"
                   }`}
                 >
-                  {link.label}
+                  {t(link.key)}
                 </Link>
               </li>
             );
           })}
         </ul>
 
-        {/* Right: CTA + hamburger */}
         <div className="flex items-center gap-3">
+          <LanguageSwitcher />
           <a
             href={BOOK_NOW_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="hidden rounded-lg bg-brand-orange px-5 py-2.5 text-sm font-bold text-brand-black transition-all hover:brightness-110 hover:shadow-lg hover:shadow-brand-orange/25 sm:inline-block"
           >
-            BOOK NOW
+            {t("bookNow")}
           </a>
           <button
             type="button"
@@ -95,7 +104,6 @@ export function Navbar() {
         </div>
       </nav>
 
-      {/* Mobile menu */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -106,7 +114,7 @@ export function Navbar() {
             className="overflow-hidden border-t border-surface-border bg-brand-black md:hidden"
           >
             <div className="space-y-1 px-5 py-4">
-              {NAV_LINKS.map((link) => (
+              {NAV_KEYS.map((link) => (
                 <Link
                   key={link.href}
                   href={link.href}
@@ -116,7 +124,7 @@ export function Navbar() {
                       : "text-text-secondary hover:bg-surface-dark hover:text-white"
                   }`}
                 >
-                  {link.label}
+                  {t(link.key)}
                 </Link>
               ))}
               <a
@@ -125,7 +133,7 @@ export function Navbar() {
                 rel="noopener noreferrer"
                 className="mt-2 block rounded-lg bg-brand-orange py-3 text-center text-sm font-bold text-brand-black"
               >
-                BOOK NOW
+                {t("bookNow")}
               </a>
             </div>
           </motion.div>

@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { BOOK_NOW_URL } from "@/lib/constants";
 
 type Props = {
@@ -11,11 +12,15 @@ type Props = {
 };
 
 export function CTASection({
-  title = "Ready to book your service?",
-  subtitle = "Schedule your appointment online in minutes.",
-  buttonLabel = "Book Now",
+  title,
+  subtitle,
+  buttonLabel,
   buttonUrl = BOOK_NOW_URL,
 }: Props) {
+  const t = useTranslations("cta");
+  title = title ?? t("defaultTitle");
+  subtitle = subtitle ?? t("defaultSubtitle");
+  buttonLabel = buttonLabel ?? t("bookNow");
   return (
     <section className="relative overflow-hidden bg-brand-orange">
       {/* Decorative elements */}
