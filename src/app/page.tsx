@@ -6,14 +6,14 @@ import { motion } from "framer-motion";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
-import { TestimonialCard } from "@/components/TestimonialCard";
 import { CTASection } from "@/components/CTASection";
 import { MidPageCTA } from "@/components/MidPageCTA";
 import { ServiceAreaGrid } from "@/components/ServiceAreaGrid";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { SocialFeed } from "@/components/SocialFeed";
 import { FAQSection } from "@/components/FAQSection";
-import { SERVICES, TESTIMONIALS } from "@/lib/services-data";
+import { GoogleReviews } from "@/components/GoogleReviews";
+import { SERVICES } from "@/lib/services-data";
 import { BOOK_NOW_URL } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
@@ -178,30 +178,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Customer Reviews */}
+      {/* Customer Reviews — Google Reviews */}
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading
-            label="Testimonials"
-            title="What Our Customers Say"
-            subtitle="Don't just take our word for it — hear from Montreal drivers who trust Autoelite."
-          />
-          <div className="mt-14 grid gap-6 md:grid-cols-3">
-            {TESTIMONIALS.slice(0, 3).map((t, i) => (
-              <TestimonialCard key={t.name} name={t.name} rating={t.rating} text={t.text} index={i} />
-            ))}
-          </div>
-          <div className="mt-10 text-center">
-            <Link
-              href="/reviews"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-brand-orange hover:underline"
-            >
-              View More Reviews on Google
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-          </div>
+          <GoogleReviews />
         </div>
       </section>
 

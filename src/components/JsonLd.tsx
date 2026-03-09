@@ -3,22 +3,23 @@ import { CONTACT } from "@/lib/constants";
 const schema = {
   "@context": "https://schema.org",
   "@type": "AutoRepair",
-  name: "Autoelite",
+  name: "Autoelite Performance Centre",
   description:
-    "Professional automotive repair, diagnostics, and performance upgrades in Montreal. Trusted by drivers across the West Island.",
+    "Family-owned automotive repair shop with 35+ years of experience. Professional diagnostics, repairs, and performance upgrades in Montreal.",
   url: "https://autoelite.com",
   telephone: CONTACT.phone,
   email: CONTACT.email,
   address: {
     "@type": "PostalAddress",
-    streetAddress: "123 Auto Street",
-    addressLocality: "Montreal",
+    streetAddress: "3354 Boul des Sources",
+    addressLocality: "Dollard-des-Ormeaux",
     addressRegion: "QC",
-    postalCode: "H1A 1A1",
+    postalCode: "H9B 1Z9",
     addressCountry: "CA",
   },
   areaServed: [
     { "@type": "City", name: "Montreal" },
+    { "@type": "City", name: "Dollard-des-Ormeaux" },
     { "@type": "City", name: "Vaudreuil-Dorion" },
     { "@type": "City", name: "Pointe-Claire" },
     { "@type": "City", name: "Dorval" },
@@ -31,16 +32,10 @@ const schema = {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
       opens: "08:00",
-      closes: "18:00",
-    },
-    {
-      "@type": "OpeningHoursSpecification",
-      dayOfWeek: "Saturday",
-      opens: "09:00",
-      closes: "16:00",
+      closes: "17:00",
     },
   ],
-  image: "https://autoelite.com/og-image.jpg",
+  image: "https://autoelite.com/logo-full.png",
   priceRange: "$$",
 };
 

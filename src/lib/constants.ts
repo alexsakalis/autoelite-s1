@@ -1,6 +1,12 @@
 export const BOOK_NOW_URL = "https://autoelite.nava360.com";
 export const SITE_URL = "https://autoelite.com";
 
+export const GOOGLE_MAPS_URL = "https://maps.app.goo.gl/23ACC1akBNtaZ2wL9";
+
+export const GOOGLE_REVIEWS_URL = GOOGLE_MAPS_URL;
+
+export const ELFSIGHT_APP_ID = "0f53bcee-e793-4675-83b4-793000a205b8";
+
 export const NAV_LINKS = [
   { href: "/", label: "Home" },
   { href: "/services", label: "Services" },
@@ -11,20 +17,21 @@ export const NAV_LINKS = [
 ] as const;
 
 export const CONTACT = {
-  address: "123 Auto Street, Montreal, QC H1A 1A1",
-  phone: "(514) 555-0199",
+  address: "3354 Boul des Sources, Dollard-des-Ormeaux, QC H9B 1Z9",
+  phone: "(514) 822-4449",
   email: "info@autoelite.com",
-  hours: "Mon–Fri: 8am–6pm | Sat: 9am–4pm",
+  hours: "Mon–Fri: 8am–5pm",
 } as const;
 
 export const SOCIALS = [
-  { name: "Instagram", href: "#" },
-  { name: "Facebook", href: "#" },
-  { name: "TikTok", href: "#" },
+  { name: "Instagram", href: "https://www.instagram.com/autoeliteinc/" },
+  { name: "Facebook", href: "https://www.facebook.com/profile.php?id=61588411277618" },
+  { name: "TikTok", href: "https://www.tiktok.com/@autoeliteddo" },
 ] as const;
 
 export const SERVICE_AREAS = [
   "Montreal",
+  "Dollard-des-Ormeaux",
   "Vaudreuil-Dorion",
   "Pointe-Claire",
   "Dorval",
