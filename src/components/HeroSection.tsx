@@ -4,14 +4,11 @@ import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { BOOK_NOW_URL } from "@/lib/constants";
 import { IMAGES } from "@/lib/images";
 
 type HeroSectionProps = {
   title: string;
   subtitle?: string;
-  primaryLabel?: string;
-  primaryUrl?: string;
   secondaryLabel?: string;
   secondaryHref?: string;
   showImage?: boolean;
@@ -22,8 +19,6 @@ type HeroSectionProps = {
 export function HeroSection({
   title,
   subtitle,
-  primaryLabel,
-  primaryUrl = BOOK_NOW_URL,
   secondaryLabel,
   secondaryHref,
   showImage = true,
@@ -31,8 +26,6 @@ export function HeroSection({
   imageAlt = "Autoelite automotive service",
 }: HeroSectionProps) {
   const t = useTranslations("hero");
-  const resolvedPrimaryLabel = primaryLabel ?? t("bookAppointment");
-  const isExternal = primaryUrl.startsWith("http");
 
   return (
     <section className="relative overflow-hidden bg-hero-gradient">
@@ -65,36 +58,16 @@ export function HeroSection({
             </p>
           )}
 
-          <div className="mt-10 flex flex-wrap gap-4">
-            {isExternal ? (
-              <a
-                href={primaryUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 rounded-lg bg-brand-orange px-7 py-3.5 text-base font-bold text-brand-black transition-all hover:brightness-110 hover:shadow-xl hover:shadow-brand-orange/25"
-              >
-                {resolvedPrimaryLabel}
-                <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                </svg>
-              </a>
-            ) : (
-              <Link
-                href={primaryUrl}
-                className="inline-flex items-center gap-2 rounded-lg bg-brand-orange px-7 py-3.5 text-base font-bold text-brand-black transition-all hover:brightness-110"
-              >
-                {resolvedPrimaryLabel}
-              </Link>
-            )}
-            {secondaryLabel && secondaryHref && (
+          {secondaryLabel && secondaryHref && (
+            <div className="mt-10 flex flex-wrap gap-4">
               <Link
                 href={secondaryHref}
                 className="inline-flex items-center gap-2 rounded-lg border border-surface-border bg-transparent px-7 py-3.5 text-base font-semibold text-white transition-colors hover:border-white/40 hover:bg-white/5"
               >
                 {secondaryLabel}
               </Link>
-            )}
-          </div>
+            </div>
+          )}
         </motion.div>
 
         {showImage && (

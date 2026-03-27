@@ -1,13 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { useTranslations } from "next-intl";
 import { GoogleReviews } from "@/components/GoogleReviews";
-import { CTASection } from "@/components/CTASection";
 
 export default function ReviewsPage() {
-  const t = useTranslations("reviews");
-
   return (
     <>
       <section className="py-20 sm:py-24">
@@ -21,11 +17,6 @@ export default function ReviewsPage() {
           </motion.div>
         </div>
       </section>
-
-      <CTASection
-        title={t("ctaTitle")}
-        subtitle={t("ctaSubtitle")}
-      />
     </>
   );
 }

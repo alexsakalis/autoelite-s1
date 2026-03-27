@@ -3,10 +3,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { BOOK_NOW_URL } from "@/lib/constants";
 import { SectionHeading } from "@/components/SectionHeading";
 import { FadeIn } from "@/components/FadeIn";
-import { CTASection } from "@/components/CTASection";
 import { IMAGES } from "@/lib/images";
 
 const FLEET_SERVICES = [
@@ -82,24 +80,6 @@ export default function FleetPage() {
               >
                 {t("subtitle")}
               </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 10 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-                className="mt-10"
-              >
-                <a
-                  href={BOOK_NOW_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg bg-brand-orange px-8 py-4 text-base font-bold text-brand-black transition-all hover:brightness-110 hover:shadow-xl hover:shadow-brand-orange/25"
-                >
-                  {t("requestService")}
-                  <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </a>
-              </motion.div>
             </div>
             <motion.div
               initial={{ opacity: 0, scale: 0.95 }}
@@ -172,11 +152,6 @@ export default function FleetPage() {
         </div>
       </section>
 
-      <CTASection
-        title={t("ctaTitle")}
-        subtitle={t("ctaSubtitle")}
-        buttonLabel={t("requestService")}
-      />
     </>
   );
 }

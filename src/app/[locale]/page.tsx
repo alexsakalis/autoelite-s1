@@ -1,22 +1,16 @@
 "use client";
 
-import Image from "next/image";
 import { Link } from "@/i18n/navigation";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { HeroSection } from "@/components/HeroSection";
 import { SectionHeading } from "@/components/SectionHeading";
 import { ServiceCard } from "@/components/ServiceCard";
-import { CTASection } from "@/components/CTASection";
-import { MidPageCTA } from "@/components/MidPageCTA";
 import { ServiceAreaGrid } from "@/components/ServiceAreaGrid";
-import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
-import { SocialFeed } from "@/components/SocialFeed";
+import { InstagramFeed } from "@/components/InstagramFeed";
 import { FAQSection } from "@/components/FAQSection";
 import { GoogleReviews } from "@/components/GoogleReviews";
 import { SERVICES } from "@/lib/services-data";
-import { BOOK_NOW_URL } from "@/lib/constants";
-import { IMAGES } from "@/lib/images";
 
 const SERVICES_PREVIEW = SERVICES.slice(0, 6);
 
@@ -67,7 +61,6 @@ export default function HomePage() {
       <HeroSection
         title={t("hero.title")}
         subtitle={t("hero.subtitle")}
-        primaryLabel={t("hero.bookAppointment")}
         secondaryLabel={t("hero.viewServices")}
         secondaryHref="/services"
         showImage
@@ -130,57 +123,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mid-page CTA */}
-      <MidPageCTA
-        heading={t("midCta.inspection.heading")}
-        subtext={t("midCta.inspection.subtext")}
-      />
-
-      {/* Before & After */}
-      <BeforeAfterSlider />
-
-      {/* Gallery Preview */}
-      <section className="border-t border-surface-border bg-surface py-20 sm:py-24">
-        <div className="mx-auto max-w-7xl px-5 lg:px-8">
-          <SectionHeading label={t("gallery.label")} title={t("gallery.title")} />
-          <div className="mt-14 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-            {IMAGES.gallery.slice(0, 6).map((src, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.06 }}
-                whileHover={{ scale: 1.03 }}
-                className="group overflow-hidden rounded-xl border border-surface-border"
-              >
-                <div className="aspect-square relative">
-                  <Image
-                    src={src}
-                    alt={`Autoelite work sample ${i + 1}`}
-                    fill
-                    className="object-cover transition-transform duration-300 group-hover:scale-105"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    loading="lazy"
-                  />
-                </div>
-              </motion.div>
-            ))}
-          </div>
-          <div className="mt-12 text-center">
-            <Link
-              href="/gallery"
-              className="inline-flex items-center gap-2 rounded-lg bg-brand-orange px-6 py-3 text-sm font-bold text-brand-black transition-all hover:brightness-110"
-            >
-              {t("gallery.viewFull")}
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-              </svg>
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Customer Reviews — Google Reviews */}
       <section className="py-20 sm:py-24">
         <div className="mx-auto max-w-7xl px-5 lg:px-8">
@@ -188,24 +130,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Mid-page CTA */}
-      <MidPageCTA
-        heading={t("midCta.topShape.heading")}
-        subtext={t("midCta.topShape.subtext")}
-        buttonLabel={t("cta.bookAppointment")}
-      />
-
-      {/* Social Feed */}
-      <SocialFeed />
+      {/* Instagram Feed & Social Links */}
+      <InstagramFeed />
 
       {/* Service Areas */}
       <ServiceAreaGrid />
 
       {/* FAQ */}
       <FAQSection />
-
-      {/* Final CTA */}
-      <CTASection />
     </>
   );
 }

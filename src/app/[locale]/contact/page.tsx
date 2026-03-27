@@ -3,13 +3,11 @@
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { ContactForm } from "@/components/ContactForm";
-import { CTASection } from "@/components/CTASection";
 import { SectionHeading } from "@/components/SectionHeading";
-import { CONTACT, BOOK_NOW_URL } from "@/lib/constants";
+import { CONTACT } from "@/lib/constants";
 
 export default function ContactPage() {
   const t = useTranslations("contact");
-  const tc = useTranslations("common");
 
   return (
     <>
@@ -82,31 +80,10 @@ export default function ContactPage() {
                   Google Maps embed placeholder — add your embed code here
                 </div>
               </div>
-
-              {/* Prefer to book directly */}
-              <div className="rounded-2xl border border-brand-orange/30 bg-brand-orange/5 p-6">
-                <h3 className="font-bold text-white">{t("preferBook")}</h3>
-                <p className="mt-2 text-sm text-text-secondary">
-                  {t("preferBookDesc")}
-                </p>
-                <a
-                  href={BOOK_NOW_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="mt-4 inline-flex items-center gap-2 rounded-lg bg-brand-orange px-6 py-3 text-sm font-bold text-brand-black transition-all hover:brightness-110"
-                >
-                  {tc("bookNow")}
-                  <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </a>
-              </div>
             </motion.div>
           </div>
         </div>
       </section>
-
-      <CTASection title={t("preferBook")} subtitle={t("subtitle")} buttonLabel={tc("bookNow")} />
     </>
   );
 }

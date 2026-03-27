@@ -163,6 +163,13 @@
     "subtitle": "Restez à jour avec nos dernières réparations, builds et la vie de l'atelier.",
     "followUs": "Suivez-nous"
   },
+  "instagram": {
+    "label": "Suivez-nous",
+    "title": "Voyez-nous en action",
+    "subtitle": "Découvrez nos derniers travaux, la vie de l'atelier et notre contenu automobile sur nos réseaux sociaux.",
+    "viewMore": "Voir plus sur Instagram",
+    "followUs": "Suivez-nous"
+  },
   "serviceArea": {
     "label": "Zone de service",
     "title": "Fiers de servir Montréal et le West Island",

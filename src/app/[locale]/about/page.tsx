@@ -3,15 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
-import { BOOK_NOW_URL } from "@/lib/constants";
 import { FadeIn } from "@/components/FadeIn";
 import { ServiceAreaGrid } from "@/components/ServiceAreaGrid";
 import { IMAGES } from "@/lib/images";
 
 export default function AboutPage() {
   const t = useTranslations("about");
-  const tc = useTranslations("common");
-
   const approachPoints = [
     t("approachPoints.0"),
     t("approachPoints.1"),
@@ -248,26 +245,6 @@ export default function AboutPage() {
       {/* ── Service Areas ── */}
       <ServiceAreaGrid />
 
-      {/* ── Bottom CTA ── */}
-      <section className="border-t border-surface-border py-20">
-        <div className="mx-auto max-w-3xl px-5 text-center lg:px-8">
-          <h2 className="text-2xl font-bold text-white">{t("ctaTitle")}</h2>
-          <p className="mt-3 text-text-secondary">
-            {t("ctaSubtitle")}
-          </p>
-          <a
-            href={BOOK_NOW_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-8 inline-flex items-center gap-2 rounded-lg bg-brand-orange px-8 py-4 font-bold text-brand-black transition-all hover:brightness-110 hover:shadow-lg hover:shadow-brand-orange/25"
-          >
-            {tc("bookNow")}
-            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-            </svg>
-          </a>
-        </div>
-      </section>
     </>
   );
 }

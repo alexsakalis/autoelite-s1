@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
-import { BOOK_NOW_URL, CONTACT, SOCIALS, SERVICE_AREAS } from "@/lib/constants";
+import { CONTACT, SOCIALS, SERVICE_AREAS } from "@/lib/constants";
 
 function SocialIcon({ name }: { name: string }) {
   return (
@@ -30,7 +30,6 @@ function SocialIcon({ name }: { name: string }) {
 const NAV_KEYS = [
   { href: "/" as const, key: "home" },
   { href: "/services" as const, key: "services" },
-  { href: "/gallery" as const, key: "gallery" },
   { href: "/about" as const, key: "about" },
   { href: "/reviews" as const, key: "reviews" },
   { href: "/contact" as const, key: "contact" },
@@ -56,14 +55,6 @@ export function Footer() {
             <p className="mt-4 text-sm leading-relaxed text-text-secondary">
               {t("tagline")}
             </p>
-            <a
-              href={BOOK_NOW_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-5 inline-block rounded-lg bg-brand-orange px-5 py-2.5 text-sm font-bold text-brand-black transition-all hover:brightness-110"
-            >
-              {t("bookOnline")}
-            </a>
           </div>
 
           <div>

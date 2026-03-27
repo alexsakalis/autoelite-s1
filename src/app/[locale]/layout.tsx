@@ -9,7 +9,6 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { JsonLd } from "@/components/JsonLd";
 import { AnalyticsHead } from "@/components/AnalyticsHead";
-import { StickyMobileBook } from "@/components/StickyMobileBook";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,8 +38,8 @@ export const metadata: Metadata = {
     "vehicle diagnostics Pointe-Claire",
   ],
   icons: {
-    icon: "/logo-icon.png",
-    apple: "/logo-icon.png",
+    icon: "/favicon-rounded.png",
+    apple: "/favicon-rounded.png",
   },
   openGraph: {
     title: "Autoelite Performance Centre | Trusted Automotive Service",
@@ -92,7 +91,6 @@ export default async function LocaleLayout({ children, params }: Props) {
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
-          <StickyMobileBook />
         </NextIntlClientProvider>
       </body>
     </html>
