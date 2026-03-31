@@ -4,7 +4,7 @@ export function AnalyticsHead() {
   return (
     <>
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-FF79049V64"
+        src="https://www.googletagmanager.com/gtag/js?id=G-B4CLWV9V3J"
         strategy="afterInteractive"
       />
       <Script id="ga4" strategy="afterInteractive">
@@ -12,7 +12,7 @@ export function AnalyticsHead() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-FF79049V64');
+          gtag('config', 'G-B4CLWV9V3J');
         `}
       </Script>
 
