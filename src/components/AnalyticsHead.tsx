@@ -1,21 +1,10 @@
-/**
- * Analytics placeholder.
- *
- * Replace the IDs below with your real tracking IDs:
- *  - Google Analytics (GA4): G-XXXXXXXXXX
- *  - Google Search Console verification: paste the <meta> tag content
- *
- * Once you have the IDs, uncomment the relevant <Script> blocks.
- */
-
-// import Script from "next/script";
+import Script from "next/script";
 
 export function AnalyticsHead() {
   return (
     <>
-      {/* ── Google Analytics (GA4) ──
       <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+        src="https://www.googletagmanager.com/gtag/js?id=G-FF79049V64"
         strategy="afterInteractive"
       />
       <Script id="ga4" strategy="afterInteractive">
@@ -23,12 +12,11 @@ export function AnalyticsHead() {
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', 'G-XXXXXXXXXX');
+          gtag('config', 'G-FF79049V64');
         `}
       </Script>
-      */}
 
-      {/* ── Google Search Console verification ──
+      {/* Google Search Console verification — uncomment and add your code when ready
       <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" />
       */}
     </>
