@@ -19,7 +19,7 @@ export const NAV_LINKS = [
 export const CONTACT = {
   address: "3354 Boul des Sources, Dollard-des-Ormeaux, QC H9B 1Z9",
   phone: "(514) 822-4449",
-  email: "info@autoelite.com",
+  email: "info@autoelite.ca",
   hours: "Mon–Fri: 8am–5pm",
 } as const;
 
